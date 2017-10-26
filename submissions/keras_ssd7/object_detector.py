@@ -50,8 +50,8 @@ class ObjectDetector(object):
 
         # TEMP - for showcase load weights (this is not possible
         # for an actual submission)
-        #self.model_.load_weights('submissions/keras_ssd7/ssd7_0_weights.h5')
-        #return
+        self.model_.load_weights('submissions/keras_ssd7/ssd7_0_weights.h5')
+        return
         #
 
         # build the box encoder to later encode y to make usable in the model
