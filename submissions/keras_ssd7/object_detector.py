@@ -282,20 +282,19 @@ class BatchGeneratorBuilder(object):
         # be able to end.
         while True:
             X = self.X_array[indices]
-            y = [self.y_array[i] for i in indices]
+            y = [self.y_array[i].copy() for i in indices]
 
             # converting to float needed?
             # X = np.array(X, dtype='float32')
 
             # Yielding mini-batches
             for i in range(0, len(X), batch_size):
-                #print("batch ", i)
+
                 X_batch = [np.expand_dims(img, -1)
                            for img in X[i:i + batch_size]]
                 y_batch = y[i:i + batch_size]
 
                 for j in range(len(X_batch)):
-                    #print(j)
 
                     # flip images
                     if np.random.randint(2):
