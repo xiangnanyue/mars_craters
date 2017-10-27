@@ -39,7 +39,7 @@ class ObjectDetector(object):
 
     """
 
-    def __init__(self, batch_size=10, epoch=50, model_check_point=True):
+    def __init__(self, batch_size=32, epoch=50, model_check_point=True):
         self.model_, self.params_model_, self.predictor_sizes = \
             self._build_model()
         self.batch_size = batch_size
@@ -282,7 +282,7 @@ class BatchGeneratorBuilder(object):
         # be able to end.
         while True:
             X = self.X_array[indices]
-            y = [self.y_array[i].copy() for i in indices]
+            y = [self.y_array[i][:] for i in indices]
 
             # converting to float needed?
             # X = np.array(X, dtype='float32')
