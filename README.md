@@ -12,7 +12,7 @@ First, make sure you have `ramp-workflow` installed:
 $ pip install git+https://github.com/paris-saclay-cds/ramp-workflow
 ```
 
-Go to [`ramp-worflow`](https://github.com/paris-saclay-cds/ramp-workflow) for more help on the [RAMP](http:www.ramp.studio) ecosystem.
+Go to [`ramp-workflow`](https://github.com/paris-saclay-cds/ramp-workflow) for more help on the [RAMP](http:www.ramp.studio) ecosystem.
 
 Then download or ``git clone`` this repository and navigate to the directory:
 
