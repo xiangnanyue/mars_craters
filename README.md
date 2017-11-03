@@ -48,3 +48,7 @@ $ ramp_test_submission --submission my_submission_name
 ```
 
 Get started on this RAMP with the [dedicated notebook](mars_craters_starting_kit.ipynb).
+
+### Amazon Machine Image (AMI)
+
+We have built an AMI on the [Oregon site of AWS](https://us-west-2.console.aws.amazon.com). You can sign up and launch an instance following [this blog post](https://hackernoon.com/keras-with-gpu-on-amazon-ec2-a-step-by-step-instruction-4f90364e49ac). When asked for the AMI, search for `mars_craters_users`. Both `ramp-workflow` and this kit are pre-installed, along with the most popular deep learning libraries. We will use `g3.4xlarge` instances to train your models (in case you use deep learning). They cost about 1€/hour.
